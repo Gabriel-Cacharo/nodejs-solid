@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "26.0.0",
+    "eslint": "10.5.0",
+    "globals": "17.6.0",
+    "jiti": "2.7.0",
+    "prisma": "7.8.0",
+    "tsup": "8.5.1",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.61.1"
+  },
+  "dependencies": {
+    "@prisma/client": "7.8.0",
+    "dotenv": "17.4.2",
+    "fastify": "5.8.5",
+    "zod": "4.4.3"
+  }
+}
