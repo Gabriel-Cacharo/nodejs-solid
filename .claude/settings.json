@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(npx eslint . 2>&1 | Select-Object -First 30; \"exit code: $LASTEXITCODE\")"
+      "PowerShell(npx eslint . 2>&1 | Select-Object -First 30; \"exit code: $LASTEXITCODE\")",
+      "Bash(ls node_modules/@prisma)",
+      "Bash(ls prisma.config.ts)",
+      "Bash(npm i *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(grep -m5 \"Prisma\" generated/prisma/client.ts)",
+      "Bash(ls generated/prisma)"
     ]
   }
 }
