@@ -5,6 +5,7 @@ const envSchema = z.object({
   NODE_ENV: z.enum(["dev", "test", "production"]).default("dev"),
   DATABASE_URL: z.string(),
   PORT: z.coerce.number().default(3333),
+  JWT_SECRET: z.string(),
 });
 
 // coerce = convertendo o valor para o tipo desejado, nesse caso, number
