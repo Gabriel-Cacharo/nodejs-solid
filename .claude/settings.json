@@ -8,7 +8,14 @@
       "Bash(npx tsc *)",
       "Bash(echo \"exit: $?\")",
       "Bash(grep -m5 \"Prisma\" generated/prisma/client.ts)",
-      "Bash(ls generated/prisma)"
+      "Bash(ls generated/prisma)",
+      "Bash(npx prisma *)",
+      "Bash(npm run *)",
+      "Bash(npx tsx *)",
+      "Bash(npx vitest *)",
+      "Bash(npm test *)",
+      "PowerShell(npx prisma generate)",
+      "PowerShell(npx tsc --noEmit)"
     ]
   }
 }
